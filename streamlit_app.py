@@ -75,7 +75,7 @@ loan_cat = pd.DataFrame(cat, index=[0])
 loan_dummies = pd.get_dummies(loan_cat)
 loan_dummies = loan_dummies.reindex(columns=dummy_columns, fill_value=0)
 
-loan_num['asset_value_comb'] = Loan_num['bank_asset_value'] + loan_num['commercial_assets_value'] + loan_num['luxury_assets_value'] + loan_num['residential_assets_value']
+loan_num['asset_value_comb'] = loan_num['bank_asset_value'] + loan_num['commercial_assets_value'] + loan_num['luxury_assets_value'] + loan_num['residential_assets_value']
 loan_num['loan_amount_per_income'] = loan_num['loan_amount'] / loan_num['income_annum']
 loan_num['no_of_dependents'] = loan_num['no_of_dependents'] + 1
 loan_num['income_annum_per_dependents'] = loan_num['income_annum'] / loan_num['no_of_dependents']
