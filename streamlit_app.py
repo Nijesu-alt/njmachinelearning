@@ -72,4 +72,4 @@ cat = {
 
 loan_cat = pd.DataFrame(cat, index=[0])
 loan_dummies = pd.get_dummies(loan_cat)
-loan_dummies = loan_dummies.reindex(columns=dummy_cols, fill_value=0)
+loan_dummies = loan_dummies.reindex(columns=dummy_columns, fill_value=0)
