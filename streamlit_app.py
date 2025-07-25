@@ -45,3 +45,16 @@ data = {
 with st.expander('DataFrame of Your Features'):
   loan = pd.DataFrame(data, index=[0])
   loan
+data2 = {
+  'no_of_dependents' : no_of_dep,
+  'income_annum' : income,
+  'loan_amount' : loan_amount,
+  'loan_term' : loan_term,
+  'cibil_score' : score,
+  'residential_assets_value' : res_ass_val,
+  'commercial_assets_value' : com_ass_val,
+  'luxury_assets_value' : lux_ass_val,
+  'bank_asset_value' : bank_ass_val,
+}
+
+loan_num = pd.DataFrame(data2, index=[0])
