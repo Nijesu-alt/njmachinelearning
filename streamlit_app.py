@@ -74,5 +74,6 @@ loan_cat = pd.DataFrame(cat, index=[0])
 loan_dummies = pd.get_dummies(loan_cat)
 loan_dummies = loan_dummies.reindex(columns=dummy_columns, fill_value=0)
 
+loan_num = np.array(loan_num).reshape(1, -1)
 scaled_loan = scaler.transform(loan_num)
 scaled_df = pd.DataFrame(scaled_loan, columns=loan_num.columns)
