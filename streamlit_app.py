@@ -3,6 +3,7 @@ import pandas as pd
 import pickle
 import gzip
 import requests
+import numpy as np
 
 st.title('🪙 Loan Eligibility App')
 
