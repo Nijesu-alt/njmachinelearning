@@ -81,6 +81,6 @@ loan_num['no_of_dependents'] = loan_num['no_of_dependents'] + 1
 loan_num['income_annum_per_dependents'] = loan_num['income_annum'] / loan_num['no_of_dependents']
 
 
-loan_num = np.array(loan_num).reshape(1, -1)
+# loan_num = np.array(loan_num).reshape(1, -1)
 scaled_loan = scaler.transform(loan_num)
 scaled_df = pd.DataFrame(scaled_loan, columns=loan_num.columns, index=[0])
