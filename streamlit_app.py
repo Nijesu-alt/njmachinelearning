@@ -1,5 +1,11 @@
 import streamlit as st
+import pandas as pd
+import pickle
+import gzip
+import requests
 
-st.title('🎈 App Name')
+st.title('🪙 Loan Eligibility App')
 
-st.write('Hello world!')
+st.info('This apps uses machine learning model to check loan eligibility')
+
+
