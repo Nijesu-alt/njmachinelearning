@@ -43,4 +43,4 @@ data = {
   'Self_Employed?' : job
 }
 with st.expander('DataFrame of Your Features'):
-  pd.DataFrame(data)
+  pd.DataFrame(data, index=[0])
