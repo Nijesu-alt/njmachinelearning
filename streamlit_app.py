@@ -87,5 +87,8 @@ scaled_df = pd.DataFrame(scaled_loan, columns=loan_num.columns, index=[0])
 
 X = pd.concat([scaled_df, loan_cat], axis=1)
 
-# with gzip.open('mymodel1.pkl.gz', 'rb') as f:
-#     model = pickle.load(f)
+with gzip.open('model.pkl.gz', 'rb') as f:
+    model = pickle.load(f)
+if st.button("Predict"):
+  y = model.predict(X)
+  y
