@@ -19,7 +19,7 @@ with st.sidebar:
   st.sidebar.markdown("<h3 style='color:#F63366;'>Customer Profile</h3>", unsafe_allow_html=True)
   st.header('Input Features')
   no_of_dep = st.slider('Number of Dependents', 0, 10, 5)
-  income = st.number_input('Annual Income', 100000, 10000000, 100000)
+  income = st.number_input('Annual Income', 100000, 10000000, 100000, 500000)
   loan_amount = st.number_input('Loan Amount', 300000, 50000000, 1000000, 100000)
   loan_term = st.slider('Loan Term', 2, 40, 25)
   score = st.slider('Cibil Score', 2, 20, 12)
