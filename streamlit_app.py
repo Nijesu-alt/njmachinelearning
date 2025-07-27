@@ -91,4 +91,4 @@ with gzip.open('model.pkl.gz', 'rb') as f:
     model = pickle.load(f)
 if st.button("Predict"):
   y = model.predict(X)
-  y
+  
