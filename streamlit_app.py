@@ -91,4 +91,9 @@ with gzip.open('model.pkl.gz', 'rb') as f:
     model = pickle.load(f)
 if st.button("Predict"):
   y = model.predict(X)
+  if y == 'Approved':
+    print('🎉 Congratulations, you are Eligible to get a Loan')
+  else:
+    print('😓 Sorry! you are not Eligbile for a Loan')
+    
   
