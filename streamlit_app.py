@@ -5,7 +5,7 @@ import gzip
 import requests
 import numpy as np
 
-st.title('🪙 Loan Eligibility App')
+st.title('🪙 Jolade Eligibility App')
 
 st.info('This apps uses machine learning model to check loan eligibility')
 
