@@ -93,9 +93,9 @@ if st.button("Predict"):
   y = model.predict(X)
   y
   
- if y == 'Approved':
+  if y == 'Approved':
    print('🎉 Congratulations, you are Eligible to get a Loan')
- else:
+  else:
    print('😓 Sorry! you are not Eligbile for a Loan')
     
   
